@@ -1,0 +1,3 @@
+//Trong hai thuật toán, Insertion Sort (Sắp xếp Chèn) nên dùng với LinkedList, còn Selection Sort (Sắp xếp Chọn) thì không nên
+//Với Insertion Sort, LinkedList phát huy tối đa ưu điểm khi thao tác chèn phần tử chỉ tốn O(1) nhờ việc ngắt và nối lại con trỏ, triệt tiêu hoàn toàn chi phí dời dịch dữ liệu tốn kém như trên mảng tĩnh.
+//Ngược lại, Selection Sort trên LinkedList hoàn toàn không mang lại lợi ích: thuật toán vẫn phải duyệt tuần tự qua từng nút để tìm giá trị nhỏ nhất với ~N^2/2 phép so sánh (dễ bị chậm do cache miss), trong khi việc hoán đổi hai nút không liền kề trong danh sách liên kết lại phức tạp và tốn thao tác hơn mảng thông thường rất nhiều.
